@@ -15,19 +15,20 @@
     },
   "dns": {
     "servers": [
-      {"tag": "proxyDns", "address": "tls://8.8.8.8", "address_resolver": "localDns", "address_strategy": "ipv4_only", "detour": "🚀 节点选择"},
+      {"tag": "proxyDns", "address": "tls://8.8.8.8", "address_resolver": "localDns", "address_strategy": "prefer_ipv4", "detour": "🚀 节点选择"},
       {"tag": "localDns", "address": "223.5.5.5", "detour": "🎯 全球直连"},
       {"tag": "block", "address": "rcode://success"}
     ],
     "rules": [
       {"outbound": "any", "server": "localDns", "disable_cache": true},
       {"rule_set": "geosite-cn", "server": "localDns"},
+      {"rule_set": "geosite-pt", "server": "localDns"},
       {"clash_mode": "direct", "server": "localDns"},
       {"clash_mode": "global", "server": "proxyDns"},
       {"rule_set": "geosite-geolocation-!cn", "server": "proxyDns"}
     ],
     "final": "localDns",
-    "strategy": "ipv4_only"
+    "strategy": "prefer_ipv4"
   },
 
   "inbounds": [
