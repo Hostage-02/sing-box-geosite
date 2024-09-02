@@ -1,0 +1,27 @@
+name: Daily File Copy
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 时间 00:00 运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout destination repo
+      uses: actions/checkout@v2
+      with:
+        repository: Hostage-02/sing-box-geosite
+        token: ${{ secrets.PAT }}  # 使用个人访问令牌
+
+    - name: Download file from source repo
+      run: |
+        curl -o proxy-list.txt https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt
+
+    - name: Commit and push if changed
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add proxy-list.txt
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update proxy-list.txt" && git push)
