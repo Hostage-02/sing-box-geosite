@@ -14,11 +14,30 @@ jobs:
 
       - name: Download remote file
         run: |
-          curl -o proxy-list.txt https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt
+          curl -v -o proxy-list.txt https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt
+          echo "Content of proxy-list.txt:"
+          cat proxy-list.txt | head -n 5
+
+      - name: Check file status
+        run: |
+          ls -l proxy-list.txt
+          git status
 
       - name: Commit and push if changed
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add proxy-list.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update proxy-list.txt" && git push)
+          git status
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update proxy-list.txt"
+            git push
+          fi
+
+      - name: Check final status
+        run: |
+          git status
+          echo "Current directory contents:"
+          ls -la
