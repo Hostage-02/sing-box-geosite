@@ -1,4 +1,4 @@
-name: Daily File Copy
+name: Daily File Sync
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # 允许手动触发
 
 jobs:
-  copy-file:
+  sync_file:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout destination repo
