@@ -14,7 +14,7 @@ jobs:
 
       - name: Download remote file
         run: |
-          curl -v -o proxy-list.txt https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-list.txt
+          curl -v -o proxy-list.txt https://github.com/Loyalsoldier/v2ray-rules-dat/blob/release/proxy-list.txt
           echo "Content of proxy-list.txt:"
           cat proxy-list.txt | head -n 5
 
