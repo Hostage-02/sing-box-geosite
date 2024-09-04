@@ -1,0 +1,10 @@
+{
+  "rules": [
+    {
+      "domain_suffix": [
+        "v2ex.com"
+      ]
+    }
+  ],
+  "version": 1
+}
