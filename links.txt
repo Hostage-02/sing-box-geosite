@@ -17,3 +17,4 @@ https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/proxy-lis
 https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/reject-list.txt
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/GoogleFCM/GoogleFCM.list
 https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/direct-list.txt
+https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Surge/PrivateTracker/PrivateTracker.list
