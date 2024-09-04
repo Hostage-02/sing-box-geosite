@@ -2,6 +2,7 @@
   "rules": [
     {
       "domain_suffix": [
+        "mtalk.google.com",
         "v2ex.com"
       ]
     }
