@@ -2,3 +2,4 @@
 .mtalk.google.com
 .sing-box.sinzhishuibie.workers.dev
 .plex.tv
+.beyond-hd.me
