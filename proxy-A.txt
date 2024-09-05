@@ -1,3 +1,4 @@
 .v2ex.com
 .mtalk.google.com
 .sing-box.sinzhishuibie.workers.dev
+.plex.tv
