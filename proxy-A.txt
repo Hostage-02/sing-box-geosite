@@ -3,3 +3,4 @@
 .sing-box.sinzhishuibie.workers.dev
 .plex.tv
 .github.com
+.flacsfor.me
