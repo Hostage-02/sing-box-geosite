@@ -2,6 +2,7 @@
   "rules": [
     {
       "domain_suffix": [
+        "flacsfor.me",
         "github.com",
         "mtalk.google.com",
         "plex.tv",
