@@ -4,3 +4,4 @@
 .plex.tv
 .github.com
 .flacsfor.me
+.pass.564672.xyz
