@@ -1,3 +1,4 @@
+.metacubex.one
 .services.googleapis.cn
 .v2ex.com
 .mtalk.google.com
