@@ -1,3 +1,4 @@
+.amazon.com
 .bestvm.cloud
 .metacubex.one
 .services.googleapis.cn
