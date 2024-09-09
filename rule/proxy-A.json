@@ -2,6 +2,7 @@
   "rules": [
     {
       "domain_suffix": [
+        "bestvm.cloud",
         "flacsfor.me",
         "github.com",
         "metacubex.one",
