@@ -1,3 +1,4 @@
+.hostloc.com
 .amazon.com
 .bestvm.cloud
 .metacubex.one
