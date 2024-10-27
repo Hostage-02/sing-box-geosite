@@ -1,3 +1,4 @@
+.keiyoushi.github.io
 .hostloc.com
 .amazon.com
 .bestvm.cloud
