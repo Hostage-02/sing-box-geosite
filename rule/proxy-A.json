@@ -1,23 +1,4 @@
 {
-  "rules": [
-    {
-      "domain_suffix": [
-        "amazon.com",
-        "bestvm.cloud",
-        "flacsfor.me",
-        "github.com",
-        "hostloc.com",
-        "keiyoushi.github.io",
-        "metacubex.one",
-        "mtalk.google.com",
-        "pass.564672.xyz",
-        "plex.tv",
-        "services.googleapis.cn",
-        "sing-box.sinzhishuibie.workers.dev",
-        "south-plus.net",
-        "v2ex.com"
-      ]
-    }
-  ],
+  "rules": [],
   "version": 1
 }
